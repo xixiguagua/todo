@@ -1,0 +1,886 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../ruby/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * variables
+ */
+/**
+ * reset
+ */
+/**
+ * common
+ */
+/* line 6, ../sass/_reset.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Microsoft YaHei", "SimHei", "STHeiti", sans-serif;
+}
+
+/* line 14, ../sass/_reset.scss */
+.header,
+.main {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+/* line 21, ../sass/_reset.scss */
+body,
+div,
+h1,
+h2,
+h3,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, ../sass/_reset.scss */
+.all-tasks,
+.cate,
+.list h2,
+.list h3 {
+  padding-left: 15px;
+}
+
+/* line 39, ../sass/_reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 43, ../sass/_reset.scss */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/* line 49, ../sass/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 53, ../sass/_reset.scss */
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 57, ../sass/_reset.scss */
+button,
+input,
+select,
+textarea {
+  outline: 0;
+}
+
+/* line 64, ../sass/_reset.scss */
+i {
+  margin-right: 5px;
+}
+
+/* line 68, ../sass/_reset.scss */
+textarea:disabled {
+  color: #000;
+  background: #fff;
+  -webkit-text-fill-color: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* line 75, ../sass/_reset.scss */
+.add,
+.all-tasks,
+.cate,
+.content,
+.cover,
+.left,
+.list,
+.mid,
+.right,
+.status,
+.task-date,
+.task-list,
+.title {
+  position: absolute;
+  left: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 95, ../sass/_reset.scss */
+.all-tasks, .cate, .list, .add, .task-list, .title, .task-date, .content, .cover {
+  position: absolute;
+  left: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * header
+ */
+/**
+ * header
+ */
+/* line 4, ../sass/_header.scss */
+.header {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #636363;
+  /* 
+   * shadow
+   */
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+/* line 19, ../sass/_header.scss */
+.header div {
+  display: none;
+}
+/* line 23, ../sass/_header.scss */
+.header h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 60px;
+  margin-left: 15px;
+}
+/* line 28, ../sass/_header.scss */
+.header h1 i {
+  margin-right: 10px;
+}
+
+/**
+ * main
+ */
+/**
+ * main
+ */
+/* line 4, ../sass/_main.scss */
+.main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  z-index: 9;
+}
+
+/**
+ * left
+ */
+/* line 4, ../sass/_main-left.scss */
+.left {
+  -webkit-order: 1;
+  order: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  position: relative;
+  background-color: rgba(99, 99, 99, 0.2);
+  font-size: 1.6rem;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  line-height: 2;
+}
+/* line 14, ../sass/_main-left.scss */
+.left .active {
+  background-color: #FbFbFb;
+}
+
+/* line 19, ../sass/_main-left.scss */
+.all-tasks {
+  top: 0;
+  width: 100%;
+  height: 37px;
+  cursor: pointer;
+  padding-left: 15px;
+  line-height: 35px;
+}
+
+/* line 28, ../sass/_main-left.scss */
+.cate {
+  top: 37px;
+  height: 37px;
+  padding-left: 15px;
+  line-height: 35px;
+}
+
+/* line 35, ../sass/_main-left.scss */
+.list {
+  width: 100%;
+  top: 69px;
+  bottom: 60px;
+  overflow-y: auto;
+}
+/* line 42, ../sass/_main-left.scss */
+.list h2, .list h3 {
+  font-size: 1.6rem;
+  padding-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 49, ../sass/_main-left.scss */
+.list h2:hover, .list h3:hover {
+  background-color: #eee;
+}
+/* line 51, ../sass/_main-left.scss */
+.list h2:hover .fa-trash-o, .list h3:hover .fa-trash-o {
+  display: block;
+}
+/* line 56, ../sass/_main-left.scss */
+.list h3 {
+  padding-left: 30px;
+}
+
+/* line 60, ../sass/_main-left.scss */
+.fa-trash-o {
+  display: none;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+
+/* line 67, ../sass/_main-left.scss */
+.add {
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  font-size: 1.6rem;
+  background-color: rgba(99, 99, 99, 0.4);
+  border: none;
+  cursor: pointer;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 80, ../sass/_main-left.scss */
+.add:hover {
+  background-color: #C1C3DE;
+  color: #343521;
+}
+
+/**
+ * mid
+ */
+/* line 4, ../sass/_main-mid.scss */
+.mid {
+  -webkit-order: 1;
+  order: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  position: relative;
+  background-color: rgba(99, 99, 99, 0.2);
+  font-size: 1.6rem;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 7;
+}
+
+/* line 13, ../sass/_main-mid.scss */
+.status button:hover, .status .active {
+  background-color: #A8AAB1;
+  color: #fff;
+}
+
+/* line 17, ../sass/_main-mid.scss */
+.status {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  border-bottom: 1px dashed rgba(99, 99, 99, 0.5);
+}
+/* line 28, ../sass/_main-mid.scss */
+.status button {
+  width: 60px;
+  height: 30px;
+  margin: 13px 5px;
+  background-color: #D8D8D8;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 43, ../sass/_main-mid.scss */
+.status .active {
+  cursor: default;
+}
+
+/* line 48, ../sass/_main-mid.scss */
+.task-list {
+  width: 100%;
+  top: 55px;
+  bottom: 60px;
+  line-height: 2;
+  font-size: 1.4rem;
+  overflow-y: auto;
+}
+/* line 57, ../sass/_main-mid.scss */
+.task-list div {
+  line-height: 2.3;
+  background-color: #dadada;
+  padding-left: 10px;
+}
+/* line 62, ../sass/_main-mid.scss */
+.task-list li {
+  padding-left: 20px;
+  cursor: pointer;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 68, ../sass/_main-mid.scss */
+.task-list li:hover {
+  background-color: #eee;
+}
+/* line 72, ../sass/_main-mid.scss */
+.task-list .active {
+  background-color: #FbFbFb;
+}
+
+/* line 76, ../sass/_main-mid.scss */
+.task-done {
+  color: #4D6A55;
+}
+
+/* line 79, ../sass/_main-mid.scss */
+.add-task {
+  background-color: rgba(99, 99, 99, 0.4);
+}
+
+/**
+ * right
+ */
+/* line 4, ../sass/_main-right.scss */
+.right {
+  -webkit-order: 3;
+  order: 3;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  position: relative;
+  z-index: 6;
+  background-color: rgba(99, 99, 99, 0.1);
+  font-size: 1.6rem;
+}
+/* line 12, ../sass/_main-right.scss */
+.right input {
+  font-size: 1.6rem;
+  border: 1px solid #AEAEAE;
+}
+/* line 16, ../sass/_main-right.scss */
+.right input:focus {
+  border: 1px solid #404040;
+}
+
+/* line 21, ../sass/_main-right.scss */
+.title {
+  width: 100%;
+  height: 55px;
+  line-height: 58px;
+  background-color: #dadada;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+/* line 30, ../sass/_main-right.scss */
+.todo-name {
+  padding-left: 15px;
+  float: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* line 36, ../sass/_main-right.scss */
+.manipulate {
+  font-size: 26px;
+  padding-right: 20px;
+  float: right;
+}
+/* line 41, ../sass/_main-right.scss */
+.manipulate a {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* line 46, ../sass/_main-right.scss */
+.task-date {
+  width: 100%;
+  height: 55px;
+  top: 55px;
+  line-height: 55px;
+  background-color: #eee;
+  padding-left: 15px;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+/* line 57, ../sass/_main-right.scss */
+.content {
+  width: 100%;
+  top: 110px;
+  overflow-y: hidden;
+  padding: 15px 15px 0;
+}
+
+/* line 66, ../sass/_main-right.scss */
+.content-with-button {
+  bottom: 50px;
+}
+
+/* line 69, ../sass/_main-right.scss */
+.content-no-button {
+  bottom: 0;
+}
+
+/* line 72, ../sass/_main-right.scss */
+.button-area {
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  padding-bottom: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 82, ../sass/_main-right.scss */
+.button-area button {
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  margin-left: 15px;
+}
+
+/* line 91, ../sass/_main-right.scss */
+.info {
+  color: #B35690;
+}
+
+/* line 94, ../sass/_main-right.scss */
+.save {
+  background-color: #95A0D8;
+  color: #fff;
+}
+
+/* line 98, ../sass/_main-right.scss */
+.cancel-save {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* line 104, ../sass/_main-right.scss */
+.input-title {
+  padding: 7px 10px;
+  margin-top: 10px;
+  width: 244px;
+}
+
+/* line 109, ../sass/_main-right.scss */
+.input-date {
+  padding: 5px 10px;
+}
+
+/* line 112, ../sass/_main-right.scss */
+.textarea-content {
+  width: 98%;
+  height: 96%;
+  margin: 0;
+  /* don't want to add to container size */
+  border: 0;
+  /* don't want to add to container size */
+  font-size: 1.6rem;
+  resize: none;
+  line-height: 1.6;
+}
+
+/**
+ * modal
+ */
+/**
+ * modal
+ */
+/* line 4, ../sass/_modal.scss */
+.cover {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+/* line 14, ../sass/_modal.scss */
+.modal {
+  width: 335px;
+  height: 195px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #eee;
+  margin-left: -167.5px;
+  margin-top: -97.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 28, ../sass/_modal.scss */
+.modal-head {
+  font-size: 2.2rem;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 34, ../sass/_modal.scss */
+.modal-body {
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  border-top: 1px dashed #C6CAE0;
+}
+/* line 42, ../sass/_modal.scss */
+.modal-body select, .modal-body input {
+  width: 160px;
+  height: 24px;
+  padding-left: 5px;
+  border: 1px solid #C6CAE0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 50, ../sass/_modal.scss */
+.modal-foot {
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 20px;
+}
+/* line 55, ../sass/_modal.scss */
+.modal-foot button {
+  background-color: #D8D8D8;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-left: 10px;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 64, ../sass/_modal.scss */
+.modal-foot button:hover {
+  background-color: #A8AAB1;
+  color: #fff;
+}
+
+/**
+ * mobile fit
+ */
+@media screen and (max-width: 770px) {
+  /* line 1, ../sass/_mobileFit.scss */
+  .header {
+    height: 44px;
+  }
+  /* line 3, ../sass/_mobileFit.scss */
+  .header div {
+    display: none;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  /* line 11, ../sass/_mobileFit.scss */
+  .header h1 {
+    text-align: center;
+    margin-left: 0;
+    line-height: 44px;
+    font-size: 2rem;
+  }
+  /* line 18, ../sass/_mobileFit.scss */
+  .header h1 i {
+    margin-right: 6px;
+  }
+
+  /* line 23, ../sass/_mobileFit.scss */
+  .main {
+    top: 44px;
+    overflow: hidden;
+  }
+
+  /* line 28, ../sass/_mobileFit.scss */
+  .left, .mid, .right {
+    width: 100%;
+    -webkit-transition: 0.3s  ease-in-out;
+    transition: 0.3s  ease-in-out;
+  }
+
+  /* line 37, ../sass/_mobileFit.scss */
+  .fa-trash-o {
+    display: block;
+    right: 15px;
+  }
+
+  /* line 41, ../sass/_mobileFit.scss */
+  .mid {
+    display: none;
+  }
+
+  /* line 46, ../sass/_mobileFit.scss */
+  .right {
+    display: none;
+  }
+
+  /* line 50, ../sass/_mobileFit.scss */
+  .title {
+    height: 44px;
+    line-height: 46px;
+  }
+
+  /* line 54, ../sass/_mobileFit.scss */
+  .task-date {
+    height: 44px;
+    top: 44px;
+    line-height: 46px;
+  }
+
+  /* line 59, ../sass/_mobileFit.scss */
+  .manipulate {
+    padding-right: 0;
+  }
+
+  /* line 62, ../sass/_mobileFit.scss */
+  .content {
+    padding: 5px 8px 0 15px;
+    top: 88px;
+  }
+
+  /* line 66, ../sass/_mobileFit.scss */
+  .content-with-button {
+    bottom: 40px;
+  }
+
+  /* line 69, ../sass/_mobileFit.scss */
+  .button-area {
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    padding-bottom: 5px;
+  }
+  /* line 78, ../sass/_mobileFit.scss */
+  .button-area button {
+    height: 32px;
+  }
+
+  /* line 84, ../sass/_mobileFit.scss */
+  .input-title {
+    padding: 5px 10px;
+    margin-top: 0;
+  }
+
+  /* line 93, ../sass/_mobileFit.scss */
+  .textarea-content {
+    width: 98%;
+    height: 100%;
+  }
+
+  /**
+   * modal
+   */
+  /* line 104, ../sass/_mobileFit.scss */
+  .modal {
+    width: 300px;
+    height: 190px;
+    padding: 5px;
+    margin-left: -150px;
+    margin-top: -95px;
+  }
+
+  /* line 111, ../sass/_mobileFit.scss */
+  .modal-head {
+    font-size: 1.8rem;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  /* line 116, ../sass/_mobileFit.scss */
+  .modal-body {
+    font-size: 1.4rem;
+    line-height: 2.8;
+  }
+  /* line 120, ../sass/_mobileFit.scss */
+  .modal-body select, .modal-body input {
+    font-size: 1.4rem;
+    width: 160px;
+    height: 28px;
+    padding-left: 5px;
+  }
+
+  /**
+   * animation
+   */
+  /* line 134, ../sass/_mobileFit.scss */
+  .page-active {
+    display: block;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 139, ../sass/_mobileFit.scss */
+  .page-next {
+    display: none;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  /* line 144, ../sass/_mobileFit.scss */
+  .page-next-next {
+    display: none;
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+  }
+
+  /* line 149, ../sass/_mobileFit.scss */
+  .page-pre {
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  /* line 154, ../sass/_mobileFit.scss */
+  .page-pre-pre {
+    display: none;
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+  }
+}

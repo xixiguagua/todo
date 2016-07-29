@@ -1,0 +1,84 @@
+/**
+ * left
+ */
+.left {
+    @include order(1);
+    @include flex-grow(1);
+    position: relative;
+    background-color: rgba($bgcolor,.2);
+    font-size: 1.6rem;   
+    @include box-shadow($boxshadow);
+    z-index: 8;
+    line-height: 2;
+
+    .active{
+        background-color: #FbFbFb;
+    }
+}
+
+.all-tasks{
+    @extend %pos;
+    top:0;
+    width:100%;
+    height:32px+$top-gap;
+    cursor: pointer;
+    padding-left: 15px;
+    line-height: 35px;
+}
+.cate{
+    @extend %pos;
+    top:32px+$top-gap;
+    height:32px+$top-gap;
+    padding-left: 15px;
+    line-height: 35px;
+}
+.list{
+
+    @extend %pos;
+    width:100%;
+    top:64px+$top-gap;
+    bottom:60px;
+    overflow-y:auto;
+    h2,h3{
+        
+        font-size: 1.6rem;
+        padding-left: 15px;
+        cursor: pointer;
+        position:relative;
+
+        &:hover{
+            background-color: #eee;
+            .fa-trash-o{
+                display:block;
+            }
+        }
+    }
+    h3{
+        padding-left: 30px;
+    }
+}
+.fa-trash-o {
+    display: none;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+.add{
+    @extend %pos;
+    width:100%;
+    bottom:0;
+    height: 60px;
+    font-size: 1.6rem;
+    background-color:rgba($bgcolor,.4);
+    border: none;
+    cursor: pointer;
+
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease);
+
+    &:hover{
+        background-color: #C1C3DE;
+        color: #343521;
+    }
+}

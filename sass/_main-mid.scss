@@ -1,0 +1,81 @@
+/**
+ * mid
+ */
+.mid {
+    @include order(1);
+    @include flex-grow(1);
+    position: relative;
+    background-color: rgba($bgcolor,.2);
+    font-size: 1.6rem;   
+    @include box-shadow($boxshadow);
+    z-index: 7;
+}
+%statusButtonHoverAndActive {
+    background-color: $statusBtnActive-bgColor;
+    color: $whiteFont;
+}
+.status {
+  @include display-flex;
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(space-around);
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    // line-height: 60px;
+    border-bottom: 1px dashed rgba($bgcolor,.5);
+
+    button {
+        width: 60px;
+        height: 30px;
+        margin: 13px 5px;
+        background-color: #D8D8D8;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        @include transition-duration(.2s);
+        @include transition-timing-function(ease);
+
+        &:hover {
+            @extend %statusButtonHoverAndActive;
+        }
+    }
+    .active {
+        @extend %statusButtonHoverAndActive;
+        cursor: default;
+    }
+}
+.task-list {
+    width: 100%;
+    @extend %pos;
+    top: 55px;
+    bottom: 60px;
+    line-height: 2;
+    font-size: 1.4rem;
+    overflow-y: auto;
+
+    div {
+        line-height: 2.3;
+        background-color: #dadada;
+        padding-left: 10px;
+    }
+    li {
+        padding-left: 20px;
+        cursor: pointer;
+        @include transition-duration(2s);
+        @include transition-timing-function(ease);
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+    .active {
+        background-color: $taskListActiveColor;
+    }
+}
+.task-done {
+    color: $taskDoneGreen;
+}
+.add-task {
+    background-color: rgba($bgcolor,.4);
+}
